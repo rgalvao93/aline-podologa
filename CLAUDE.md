@@ -10,7 +10,10 @@ Não há código-fonte, dependências, build, lint ou testes. Não crie ou sugir
 
 ## Estrutura
 
-- `anotações-iniciais.md` — documento central de contexto do projeto: dores do negócio atual, solicitações, prazos, etapas e objetivo final. Ler este arquivo primeiro para entender qualquer pedido relacionado ao negócio.
+- `anotações-iniciais.md` — documento central de contexto do projeto: dores do negócio atual, solicitações, prazos, etapas e objetivo final. Ler este arquivo primeiro para entender qualquer pedido relacionado ao negócio. Registro original — não editar.
+- `plano-lancamento.md` — cronograma de marcos até a inauguração (outubro/2026), amarrado às fases do método.
+- `metodo/` — método de trabalho replicável: convenções do repositório (`README.md`), template padrão de processos (`template-processo.md`) e framework de fases (`fases-do-projeto.md`).
+- `processos/` — processos do negócio, um por arquivo, todos seguindo `metodo/template-processo.md`. Novos processos devem usar esse template; lacunas de informação do negócio ficam marcadas como `[PENDENTE: ...]` — nunca inventar conteúdo do negócio.
 - `docs/` — imagens de referência (fotos) para uso em materiais de divulgação/catálogo.
 
 ## Contexto de negócio (de `anotações-iniciais.md`)
