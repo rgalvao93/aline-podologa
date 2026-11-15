@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aline Amaral — Podóloga Premium</title>
+  <meta name="description" content="Cuidar dos seus pés é cuidar de você. Atendimento podológico premium: saúde dos pés, bem-estar, segurança e cuidado que transforma.">
+  <meta name="theme-color" content="#FBF7F1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aline Amaral — Podóloga Premium">
+  <meta property="og:description" content="Cuidar dos seus pés é cuidar de você. Atendimento podológico premium.">
+  <meta property="og:image" content="assets/selo-circular.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23C4897A'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23F0E6D9' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=9">
+</head>
+<body>
+  <noscript>
+    <p class="noscript">Este site precisa de JavaScript ativado para exibir o conteúdo.</p>
+  </noscript>
+
+  <!-- Faixa de rascunho: some quando config.status = "no-ar" -->
+  <div class="aviso" id="aviso-rascunho" hidden>
+    <p><strong>Rascunho</strong> — conteúdo de demonstração; revisar com a Aline antes de publicar.</p>
+    <button type="button" class="aviso-fechar" id="aviso-fechar" aria-label="Fechar aviso">&times;</button>
+  </div>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-inner">
+      <a class="marca" href="#inicio">
+        <span class="marca-nome" data-campo="marca.nomeExibicao">ALINE AMARAL</span>
+        <span class="marca-descritor" data-campo="marca.descritor">PODÓLOGA PREMIUM</span>
+      </a>
+
+      <button type="button" class="menu-botao" id="menu-botao" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" id="menu-principal" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#contato">Contato</a>
+        <a class="btn btn--ouro btn--pequeno" data-link="contato.itens.whatsapp.link">Agendar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- ============================ HERO ============================ -->
+    <section class="hero" aria-label="Apresentação">
+      <div class="container hero-grid">
+        <div class="hero-texto">
+          <p class="olho"><span data-campo="hero.olho">Podologia premium</span></p>
+          <h1 data-campo="marca.slogan">Cuidar dos seus pés é cuidar de você.</h1>
+          <p class="hero-descricao" data-campo="hero.texto">Atendimento podológico individual, feito com cuidado, segurança e a experiência de um serviço premium.</p>
+          <div class="hero-acoes">
+            <a class="btn btn--tinta" data-campo="hero.ctaPrincipal" data-link="contato.itens.whatsapp.link">Agendar pelo WhatsApp</a>
+            <a class="btn btn--contorno" href="#servicos">Conhecer os serviços</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <span class="hero-anel hero-anel--externo" aria-hidden="true"></span>
+          <span class="hero-anel hero-anel--interno" aria-hidden="true"></span>
+          <figure class="hero-moldura">
+            <img data-src="imagens.selo" src="assets/selo-circular.jpg" alt="Selo circular Aline Amaral Podóloga Premium com os pilares saúde dos pés, bem-estar, segurança e cuidado que transforma" width="900" height="900">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== PILARES =========================== -->
+    <section class="pilares" aria-labelledby="pilares-titulo">
+      <h2 class="sr-only" id="pilares-titulo">Pilares do atendimento</h2>
+      <ul class="container pilares-grid" data-lista="pilares"></ul>
+    </section>
+
+    <!-- ============================ SOBRE ============================ -->
+    <section class="sobre" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container sobre-grid">
+        <div class="sobre-visual rev">
+          <figure class="sobre-moldura">
+            <img data-src="imagens.apresentacao" src="assets/logo-fundo-rose.jpg" alt="Logotipo dourado Aline Amaral Podóloga Premium sobre fundo rosé" width="900" height="900">
+          </figure>
+        </div>
+        <div class="sobre-texto rev">
+          <p class="olho"><span data-campo="sobre.olho">Quem cuida de você</span></p>
+          <h2 id="sobre-titulo" data-campo="sobre.titulo">Sobre a Aline</h2>
+          <span class="ornamento" aria-hidden="true"></span>
+          <p data-campo="sobre.texto">[PENDENTE: apresentação da Aline]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== GALERIA ========================== -->
+    <section class="galeria" id="galeria" aria-labelledby="galeria-titulo">
+      <div class="container">
+        <div class="sec-cabecalho rev">
+          <p class="olho"><span data-campo="galeria.olho">Trabalho real</span></p>
+          <h2 id="galeria-titulo" data-campo="galeria.titulo">Do nosso dia a dia</h2>
+          <span class="ornamento" aria-hidden="true"></span>
+          <p class="sec-intro" data-campo="galeria.legenda">Registro do nosso Instagram.</p>
+        </div>
+        <ul class="galeria-grid" data-lista="galeria"></ul>
+      </div>
+    </section>
+
+    <!-- =========================== SERVIÇOS =========================== -->
+    <section class="servicos" id="servicos" aria-labelledby="servicos-titulo">
+      <div class="container">
+        <div class="sec-cabecalho rev">
+          <p class="olho"><span data-campo="servicos.olho">Catálogo</span></p>
+          <h2 id="servicos-titulo" data-campo="servicos.titulo">Serviços</h2>
+          <span class="ornamento" aria-hidden="true"></span>
+        </div>
+        <div class="servicos-lista" data-lista="servicos"></div>
+      </div>
+    </section>
+
+    <!-- =========================== DÚVIDAS =========================== -->
+    <section class="duvidas" id="duvidas" aria-labelledby="duvidas-titulo">
+      <div class="container duvidas-grid">
+        <div class="duvidas-main">
+          <div class="sec-cabecalho sec-cabecalho--esquerda rev">
+            <p class="olho"><span data-campo="duvidas.olho">Antes de agendar</span></p>
+            <h2 id="duvidas-titulo" data-campo="duvidas.titulo">Dúvidas frequentes</h2>
+            <span class="ornamento" aria-hidden="true"></span>
+          </div>
+          <div class="faq-lista" data-lista="duvidas"></div>
+        </div>
+
+        <aside class="lateral-card rev" aria-label="Atalho para contato">
+          <span class="lateral-icone" aria-hidden="true" data-icone="maos"></span>
+          <h3 data-campo="duvidas.lateral.titulo">Ainda com dúvidas?</h3>
+          <p data-campo="duvidas.lateral.texto">Antes de agendar, fale diretamente com a Aline.</p>
+          <a class="btn btn--ouro" data-campo="duvidas.lateral.cta" data-link="contato.itens.whatsapp.link">Falar no WhatsApp</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- =========================== CONTATO =========================== -->
+    <section class="contato" id="contato" aria-labelledby="contato-titulo">
+      <div class="container">
+        <div class="sec-cabecalho rev">
+          <p class="olho"><span data-campo="contato.olho">Contato</span></p>
+          <h2 id="contato-titulo" data-campo="contato.titulo">Agende sua consulta</h2>
+          <span class="ornamento" aria-hidden="true"></span>
+          <p class="sec-intro" data-campo="contato.texto">Atendimento com hora marcada. Escolha o canal que preferir.</p>
+        </div>
+
+        <ul class="contatos-lista" data-lista="contatos"></ul>
+
+        <div class="contato-cta rev">
+          <a class="btn btn--tinta btn--grande" data-campo="contato.cta" data-link="contato.itens.whatsapp.link">Agendar pelo WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-inner">
+      <div class="rodape-marca">
+        <span class="marca-nome" data-campo="marca.nomeExibicao">ALINE AMARAL</span>
+        <span class="marca-descritor" data-campo="marca.descritor">PODÓLOGA PREMIUM</span>
+        <p class="rodape-slogan" data-campo="marca.slogan">Cuidar dos seus pés é cuidar de você.</p>
+      </div>
+      <nav class="rodape-menu" aria-label="Rodapé">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <p class="rodape-legal">&copy; <span id="ano">2026</span> <span data-campo="marca.nomeExibicao">ALINE AMARAL</span>. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="config.js?v=9"></script>
+  <script src="app.js?v=9"></script>
+</body>
+</html>

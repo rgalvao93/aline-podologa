@@ -1,0 +1,15 @@
+# sistema
+.DS_Store
+Thumbs.db
+
+# ambientes e segredos
+.env
+.env.*
+!.env.example
+
+# ferramentas
+node_modules/
+.vercel
+out/
+dist/
+*.log
